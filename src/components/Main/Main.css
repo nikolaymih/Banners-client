@@ -1,0 +1,40 @@
+.CardBanners {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 
+}
+
+.individualSectionWrapper {
+    position: relative;
+    max-width: 500px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.actualImg {
+    text-align: center;
+    margin-top: 80px;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 3px;
+    border-style: double;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.descriptionImg {
+    text-align: center;
+    position: absolute;
+    bottom: 3px;
+    left: 79px;
+    color: darkblue;
+}
+

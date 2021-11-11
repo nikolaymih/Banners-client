@@ -21,24 +21,21 @@ const Header = () => {
     ${process.env.REACT_APP_SERVERENDPOINT}/api/user
 `, fetcher)
 
-    if (data) {
-
-    }
-
     return (
         <header id="site-header">
             <nav className="navbar">
                 <section className="navbar-left">
                     <div className="left-logged">
                         <Link className="button" to="/">FFW</Link>
+                        {data ? <Link className="button" to='/create-banner'>Create Banner</Link> : null}
                     </div>
 
                 </section>
 
                 <section className="navbar-rightL">
                     <div className="right-logged">
-                    {data
-                            ? <Link to="/account/profile"> Hello, {data.name} </Link>
+                        {data
+                            ? <Link to="/"> Hello, {data.name} </Link>
                             : <>
                                 <Link className="button" to='/auth/login'>Login</Link>
                                 <Link className="button" to='/auth/register'>Register</Link>

@@ -1,0 +1,53 @@
+
+.createPicture {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.orderFieldsetByColumn {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.orderFieldsetByColumn hr {
+    width: 300px;
+    border-color: gray;
+    margin-bottom: 30px;
+}
+
+.formHeaderCreateImage h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.fieldCreatePet {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.inputCreatePet input {
+    border-radius: 5px;
+}
+
+.createImgButton {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.createImgButton input {
+    position: relative;
+    background-color: lightskyblue;
+    color: white;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: outset;
+    width: 200px;
+}
+
+  
