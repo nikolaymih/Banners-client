@@ -17,7 +17,7 @@ interface IUser {
 }
 
 const Header = () => {
-    const { data } = useSWR<IUser>(`
+    const { data } = useSWR<IUser | null>(`
     ${process.env.REACT_APP_SERVERENDPOINT}/api/user
 `, fetcher)
 
