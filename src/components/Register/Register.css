@@ -1,0 +1,12 @@
+.registerWrapper {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.formHeaderCreateUser h2 {
+    text-align: center;
+}
+
+.inputChangePassword input {
+    margin-left: 10px;
+}
