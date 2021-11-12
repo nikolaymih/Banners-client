@@ -1,0 +1,31 @@
+.detailsMiddlePositioned {
+    max-width: 40%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 500px;
+    margin-top: 80px;
+}
+
+.detailsImg {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 7px;
+    opacity: 0.6;
+}
+
+.detailsMiddlePositioned p {
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    bottom: 80px;
+    color: darkblue
+}
+
+.detailsMiddlePositioned h3{
+    text-align: center;
+    padding-right: 80px;
+}

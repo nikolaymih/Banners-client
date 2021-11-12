@@ -22,3 +22,26 @@ export const createBanner = async (values: CreateBannerInput) => {
         credentials: 'include'
     })
 }
+
+export const getSingleBanner = async <T>(id: string): Promise<T> => {
+    console.log(id);
+    
+    return (await fetch(`${url}/api/banners/${id}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        credentials: 'include'
+    })).json();
+}
+
+export const updateBanner = async (id: string, values: CreateBannerInput) => {
+    return fetch(`${url}/api/banners/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(values),
+        credentials: 'include'
+    })
+}
