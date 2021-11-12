@@ -24,8 +24,6 @@ export const createBanner = async (values: CreateBannerInput) => {
 }
 
 export const getSingleBanner = async <T>(id: string): Promise<T> => {
-    console.log(id);
-    
     return (await fetch(`${url}/api/banners/${id}`, {
         method: 'GET',
         headers: {
@@ -42,6 +40,16 @@ export const updateBanner = async (id: string, values: CreateBannerInput) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(values),
+        credentials: 'include'
+    })
+}
+
+export const deleteBanner = async (id: string) => {
+    return fetch(`${url}/api/banners/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
         credentials: 'include'
     })
 }

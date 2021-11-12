@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useSWR from "swr";
 import { fetcher } from "../../utils/fetcher";
@@ -17,9 +18,9 @@ interface IUser {
 }
 
 const Header = () => {
-    const { data } = useSWR<IUser | null>(`
-    ${process.env.REACT_APP_SERVERENDPOINT}/api/user
-`, fetcher)
+        const { data } = useSWR<IUser | null>(`
+        ${process.env.REACT_APP_SERVERENDPOINT}/api/user
+    `, fetcher)
 
     return (
         <header id="site-header">
