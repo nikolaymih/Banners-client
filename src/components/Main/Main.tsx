@@ -9,11 +9,11 @@ const Main = () => {
 
     useEffect(() => {
         async function fetchMyAPI() {
-                const { userBanners } = await getAllBanners();
+            const { userBanners } = await getAllBanners();
 
-                if (userBanners) {
-                    setBanners(userBanners);
-                }
+            if (userBanners) {
+                setBanners(userBanners);
+            }
         }
         fetchMyAPI()
 
